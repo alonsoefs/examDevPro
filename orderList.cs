@@ -46,7 +46,7 @@ public class Exam
         
         IEnumerable<Products> productsListSorted = Enumerable.Empty<Products>();
 
-        // order b
+        // order by ascending depending on sort type 
         if(ascending==true){
         if(sort_key=="price")
         productsListSorted = plist.OrderBy(p => p.price);
@@ -57,7 +57,8 @@ public class Exam
         else
         throw new InvalidOperationException("sort type is not valid");
         }
-        
+
+         // order by descending depending on sort type
         if(ascending==false){
         if(sort_key=="price")
         productsListSorted = plist.OrderByDescending(p => p.price);
@@ -68,7 +69,8 @@ public class Exam
         else
         throw new InvalidOperationException("sort type is not valid");
         }
-        
+
+        //print the ordered result
        foreach (var item in productsListSorted)
         {
             Console.WriteLine($"name: {item.name}, price: {item.price}, stock {item.stock}");

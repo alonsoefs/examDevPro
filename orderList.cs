@@ -27,7 +27,7 @@ public class Exam
        orderList(productslist,"price",false);
        
        //call function order by price and ascending
-       Console.WriteLine("\nsecond function call: order by price and descending \n");
+       Console.WriteLine("\nsecond function call: order by price and ascending \n");
        orderList(productslist,"price",true);
        
        //call function order by stock and ascending
@@ -35,7 +35,7 @@ public class Exam
        orderList(productslist,"stock",true);
        
        //call function order by stock and descending
-       Console.WriteLine("\nfourth function call: order by stock and ascending \n");
+       Console.WriteLine("\nfourth function call: order by stock and descending \n");
        orderList(productslist,"stock",false);
     }
     

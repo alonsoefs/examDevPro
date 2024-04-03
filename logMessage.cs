@@ -19,14 +19,14 @@ string log = currentDate.ToString("[yyyy-MM-dd HH:mm:ss]")+"["+type+"]"+message;
 Console.WriteLine(log);
 
 //create file with log info
-/*string folder = @"C:\Temp\";
+string folder = @"C:\Temp\";
 string fileName = "test.txt";
 string fullPath = folder + fileName;
 
 File.WriteAllLines(fullPath, log);
 //string readText = File.ReadAllText(fullPath);
 //Console.WriteLine(readText);
-*/
+
   
 }
 
